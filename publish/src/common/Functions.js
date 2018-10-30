@@ -6,7 +6,8 @@ export const formatCamelCaseString = text => {
 };
 
 // Handles page navigation
-export const handleOnPageNavigation = item =>
+export const handleOnPageNavigation = function (item) {
   this.setState({
     page: item.key
   });
+}
