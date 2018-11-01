@@ -8,7 +8,12 @@ import { Input, Table } from 'antd';
 
 // Gets an object which has the count of letters
 const getLetterCount = text => {
-  return text;
+  const result = {};
+  let removeAlpha =  text.replace(/\W/g, '');
+  for (var i = 0; i < text.length; i++) {
+    result[text[i]] = ((result[text[i]]) ? result[text[i]] : 0) +1;
+  }
+  return result;
 };
 
 // Define columns
