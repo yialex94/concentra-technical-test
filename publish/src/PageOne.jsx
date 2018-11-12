@@ -18,13 +18,34 @@ const getLetterCount = text => {
 
 // Define columns
 const getColumns = (text, increment) => {
-  return [
-    {
-      title: 'Letter',
-      dataIndex: 'name',
-      render: text => <b>{text}</b>
-    }
-  ];
+  // return [
+  //   {
+  //     title: 'Letter',
+  //     dataIndex: 'name',
+  //     render: text => <b>{text}</b>
+  //   }
+  // ];
+
+  // I wasnt able to figure this out
+  /*
+
+  I would probably start by creating an empty array 
+  const arr = [];
+
+  and then create a variable to account for the length of the string
+  let str = text.length
+
+  and then create a loop to push object into  array
+
+  for (let i = 0; i < str.length; i++)  {
+    arr.push(getLetterCount(i));
+  }
+
+  but im not sure where to go from here.
+
+  */
+  
+
 };
 
 // Build entry
